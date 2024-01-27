@@ -1,0 +1,8 @@
+.Tilt {
+    background: #8e9eab;
+    background: -webkit-linear-gradient(60deg, #dfe7e9, #b1b8be);
+    background: linear-gradient(60deg, #dfe7e9, #b1b8be);
+    margin: auto;
+    height: auto;
+    width: 30%;
+}
