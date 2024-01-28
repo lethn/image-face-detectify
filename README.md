@@ -1,1 +1,1 @@
-# image-face-detectify
+# ImageFaceDetectify
