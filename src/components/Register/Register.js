@@ -34,7 +34,7 @@ class Register extends React.Component {
         })
             .then(response => response.json())
             .then(user => {
-                if (user) {
+                if (user.id) {
                     this.props.loadUser(user);
                     this.props.onRouteChange('home');
                 }
@@ -57,6 +57,7 @@ class Register extends React.Component {
                                     type="text"
                                     name="name"
                                     id="name"
+                                    placeholder="Name"
                                     onChange={this.onNameChange}
                                 />
                             </div>
@@ -69,6 +70,7 @@ class Register extends React.Component {
                                     type="email"
                                     name="email-address"
                                     id="email-address"
+                                    placeholder="Email"
                                     onChange={this.onEmailChange}
                                 />
                             </div>
@@ -77,10 +79,11 @@ class Register extends React.Component {
                                     Password
                                 </label>
                                 <input
-                                    className="b pa2 input-reset ba bg-transparent hover-bg-near-black hover-white w-100"
+                                    className="pa2 input-reset ba bg-transparent hover-bg-near-black hover-white w-100"
                                     type="password"
                                     name="password"
                                     id="password"
+                                    placeholder="Password"
                                     onChange={this.onPasswordChange}
                                 />
                             </div>
